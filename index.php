@@ -40,17 +40,17 @@ echo $desc;
 echo "";
  
 // Attempt insert query execution
-$sql = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('$id', '$name', '$cat','$date','$price','abc')";
-echo $sql;
+//$sql = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('$id', '$name', '$cat','$date','$price','abc')";
+//echo $sql;
 
 //$sql2 = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('02', 'Me', 'CatX','2019-12-20',11,'abc')";
-//INSERT INTO public.product (
-//    cat, description, id, name, price, date) VALUES (
-//    'kshf'::character varying, 'sdfdg'::character varying, 'ăerw12'::character varying, 'sdsd'::character varying, '123'::character varying, '1233'::character varying)
-//     returning id;
+INSERT INTO public.product (
+cat, date, id, name, price, description) VALUES (
+'FGHJ'::character varying, 'WEF'::character varying, 'DSXC'::character varying, 'WSDAF'::character varying, 'EDSZCX'::character varying, 'WDS'::character varying)
+ returning id;
 
 $sql3 = 'INSERT INTO public."Product" (
- "id", "name", "cat", "date", "price", "descriptions",) VALUES ('."
+ cat, date, id, name, price, description) VALUES ('."
 '$id'::character varying, '$name'::character varying, '$cat'::character varying, '$date'::character varying, '$price'::character varying, '$description'::character varying)".
  'returning "Id"';
 echo $sql3;
