@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 $HOST = "ec2-174-129-255-15.compute-1.amazonaws.com";
@@ -43,11 +43,11 @@ echo "";
 $sql = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('$id', '$name', '$cat','$date','$price','abc')";
 echo $sql;
 
-$sql2 = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('02', 'Me', 'CatX','2019-12-20',11,'abc')";
-INSERT INTO public.product (
-    cat, description, id, name, price, date) VALUES (
-    'kshf'::character varying, 'sdfdg'::character varying, 'ăerw12'::character varying, 'sdsd'::character varying, '123'::character varying, '1233'::character varying)
-     returning id;
+//$sql2 = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('02', 'Me', 'CatX','2019-12-20',11,'abc')";
+//INSERT INTO public.product (
+//    cat, description, id, name, price, date) VALUES (
+//    'kshf'::character varying, 'sdfdg'::character varying, 'ăerw12'::character varying, 'sdsd'::character varying, '123'::character varying, '1233'::character varying)
+//     returning id;
 
 $sql3 = 'INSERT INTO public."Product" (
  "id", "name", "cat", "date", "price", "descriptions",) VALUES ('."
