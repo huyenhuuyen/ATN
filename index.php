@@ -44,15 +44,16 @@ echo "";
 //echo $sql;
 
 //$sql2 = "INSERT INTO Product (Id, Product_Name, Catergory, Date, Price, Descriptions) VALUES ('02', 'Me', 'CatX','2019-12-20',11,'abc')";
-INSERT INTO public.product (
-cat, date, id, name, price, description) VALUES (
-'FGHJ'::character varying, 'WEF'::character varying, 'DSXC'::character varying, 'WSDAF'::character varying, 'EDSZCX'::character varying, 'WDS'::character varying)
- returning id;
+//INSERT INTO public.product (
+//cat, date, id, name, price, description) VALUES (
+//'FGHJ'::character varying, 'WEF'::character varying, 'DSXC'::character varying, 'WSDAF'::character varying, 'EDSZCX'::character varying, 'WDS'::character varying)
+ // returning id;
 
-$sql3 = 'INSERT INTO public."Product" (
- cat, date, id, name, price, description) VALUES ('."
+
+$sql3 = 'INSERT INTO public."product" (
+ id, name, cat, date, price, description) VALUES ('."
 '$id'::character varying, '$name'::character varying, '$cat'::character varying, '$date'::character varying, '$price'::character varying, '$description'::character varying)".
- 'returning "Id"';
+ 'returning "id"';
 echo $sql3;
 
 $result = pg_query($link, $sql3);
